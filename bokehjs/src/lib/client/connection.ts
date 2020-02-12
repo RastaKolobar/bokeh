@@ -17,6 +17,7 @@ export type PendingReply = {resolve: MessageResolver, reject: Rejecter}
 export type Token = {
   session_expiry: number
   session_id: string
+  roots: string[]
   [key: string]: unknown
 }
 
